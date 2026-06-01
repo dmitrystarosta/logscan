@@ -13,6 +13,14 @@
 Установить библиотеку:
 pip install -r requirements.txt
 
+## Запуск с VirusTotal API
+Если указать API-ключ, программа будет выполнять реальную проверку через VirusTotal API.
+
+Пример запуска:
+python main.py -log-file logs/sample.log -api-key YOUR_API_KEY -output output/report.json -format json
+
+Если API-ключ не указан, используется mock-режим проверки.
+
 ## Запуск программы
 1) Создать отчет в json:
 python main.py -log-file logs/sample.log -output output/report.json -format json

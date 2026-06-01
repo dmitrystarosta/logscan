@@ -6,13 +6,11 @@ from modules.log_parser import parse_log_file
 from modules.virustotal import ch_artif
 from modules.report_generator import save_report
 
-
 logging.basicConfig(
     filename="logscan.log",
     level=logging.INFO,
     format="%(asctime)s — %(levelname)s — %(message)s"
 )
-
 
 def main():
     parser = argparse.ArgumentParser(
